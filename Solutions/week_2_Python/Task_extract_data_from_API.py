@@ -143,7 +143,7 @@ def main():
     # Fetch data from API
     data = api_client.fetch_data()
     if data and "rawData" in data:
-        print("Fetching COVID-19 statistics...")
+        print("...Fetching COVID-19 statistics...")
 
         for record in data["rawData"]:
             country = record.get("Country_Region", "Unknown")
